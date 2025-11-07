@@ -10,13 +10,15 @@
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start:api": "json-server --watch data/data.json --port 9000 --static ./public"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@remixicon/react": "^4.6.0",
     "framer-motion": "^12.11.0",
     "gsap": "^3.13.0",
+    "json-server": "^1.0.0-beta.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

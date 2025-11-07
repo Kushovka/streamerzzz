@@ -1,7 +1,20 @@
 import { motion } from "framer-motion";
 import { TESTIMONIALS_CONTENT } from "../constants";
+// import { useEffect, useState } from "react";
 
 const Testimonials = () => {
+  // const [addTestimonials, setAddTestimonials] = useState([]);
+
+  // useEffect(() => {
+  //   async function testimonialsData() {
+  //     const res = await fetch("http://localhost:9000/testimonials");
+  //     const data = await res.json();
+  //     console.log(data);
+  //     setAddTestimonials(data);
+  //   }
+  //   testimonialsData();
+  // }, []);
+
   const testimonialVariants = {
     hidden: {
       opacity: 0,
@@ -33,7 +46,7 @@ const Testimonials = () => {
           <p className="mt-4 ">{TESTIMONIALS_CONTENT.sectionDescription}</p>
         </motion.div>
 
-        <motion.div
+        <div
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
           initial="hidden"
           whileInView="visible"
@@ -66,7 +79,27 @@ const Testimonials = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+
+          {/* {addTestimonials.map((item) => (
+            <div
+              key={item.id}
+              className="mt-10 flex flex-col items-center justify-center overflow-hidden rounded-2xl bg-neutral-900/50 border border-neutral-900 p-10"
+            >
+              <p className="mb-4 text-neutral-200">{item.review}</p>
+              <div className="flex items-center mt-4 ">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <p className="text-sm font-bold text-white">{item.name}</p>
+                  <p className="text-sm text-gray-500 ">{item.title}</p>
+                </div>
+              </div>
+            </div>
+          ))} */}
+        </div>
       </div>
     </section>
   );

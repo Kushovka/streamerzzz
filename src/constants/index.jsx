@@ -9,12 +9,12 @@ import optimize from "../assets/optimize.jpeg";
 import audienceEngagementImage from "../assets/audience.jpeg";
 import monetizeImage from "../assets/monetize.jpeg";
 import automationImage from "../assets/automation.jpeg";
-import user1 from "../assets/user1.jpeg";
-import user2 from "../assets/user2.jpeg";
-import user3 from "../assets/user3.jpeg";
-import user4 from "../assets/user4.jpeg";
-import user5 from "../assets/user5.jpeg";
-import user6 from "../assets/user6.jpeg";
+import user1 from "../../public/assets/user1.jpeg";
+import user2 from "../../public/assets/user2.jpeg";
+import user3 from "../../public/assets/user3.jpeg";
+import user4 from "../../public/assets/user4.jpeg";
+import user5 from "../../public/assets/user5.jpeg";
+import user6 from "../../public/assets/user6.jpeg";
 
 import {
   RiBarChart2Line,
